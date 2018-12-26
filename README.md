@@ -1,1 +1,1 @@
-# HTML-video-recorder
+# HTML-video-recorder using webRTC API
