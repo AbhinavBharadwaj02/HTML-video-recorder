@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
+
+    <title>Recording</title>
+
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div id="container">
+
+    <video id="player" playsinline autoplay muted></video>
+    <video id="recorded" playsinline loop></video>
+
+    <div>
+        <button id="start">Start camera</button><br>
+        <button id="record" disabled>Record</button><br>
+        <button id="play" disabled>Play</button><br>
+        <button id="download" disabled>Download</button>
+    </div>
+
+    <div>
+        <p>Echo cancellation: <input type="checkbox" id="echoCancellation" checked></p>
+    </div>
+
+    <div>
+        <span id="errorMsg"></span>
+    </div>
+
+</div>
+
+<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+<script src="js/main.js" async></script>
+
+</body>
+</html>
